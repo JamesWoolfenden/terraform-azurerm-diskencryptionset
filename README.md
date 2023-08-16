@@ -70,7 +70,13 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_disk-policy"></a> [disk-policy](#output\_disk-policy) | n/a |
+| <a name="output_key"></a> [key](#output\_key) | n/a |
+| <a name="output_set"></a> [set](#output\_set) | n/a |
+| <a name="output_user-policy"></a> [user-policy](#output\_user-policy) | n/a |
+| <a name="output_vault"></a> [vault](#output\_vault) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Policy
