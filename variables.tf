@@ -31,3 +31,10 @@ variable "rg_name" {
   type        = string
   description = "resource group name"
 }
+
+
+variable "key_name" {
+  type        = string
+  default     = "pike"
+  description = ""
+}

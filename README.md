@@ -38,7 +38,7 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | 3.69.0 |
 
 ## Modules
 
@@ -62,6 +62,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
 | <a name="input_disk_encryption_set_name"></a> [disk\_encryption\_set\_name](#input\_disk\_encryption\_set\_name) | n/a | `string` | `"pike"` | no |
+| <a name="input_key_name"></a> [key\_name](#input\_key\_name) | n/a | `string` | `"pike"` | no |
 | <a name="input_location"></a> [location](#input\_location) | resource group location | `string` | n/a | yes |
 | <a name="input_rg_name"></a> [rg\_name](#input\_rg\_name) | resource group name | `string` | n/a | yes |
 | <a name="input_role_definition_name"></a> [role\_definition\_name](#input\_role\_definition\_name) | role definition name | `string` | `"Key Vault Crypto Service Encryption User"` | no |
