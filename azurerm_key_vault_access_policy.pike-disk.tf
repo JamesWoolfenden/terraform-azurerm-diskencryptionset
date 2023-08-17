@@ -14,5 +14,7 @@ resource "azurerm_key_vault_access_policy" "pike-disk" {
     "List",
     "Decrypt",
     "Sign",
+    "UnwrapKey",
+    "WrapKey",
   ]
 }
