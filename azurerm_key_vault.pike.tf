@@ -13,5 +13,6 @@ resource "azurerm_key_vault" "pike" {
   network_acls {
     default_action = "Deny"
     bypass         = "AzureServices"
+    ip_rules       = var.allowed_ips
   }
 }

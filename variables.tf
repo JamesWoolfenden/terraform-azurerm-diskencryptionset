@@ -43,3 +43,9 @@ variable "public_network_access" {
   type    = bool
   default = false
 }
+
+variable "allowed_ips" {
+  type        = list(any)
+  description = "ips/cidr that can access your vault"
+  default     = []
+}
