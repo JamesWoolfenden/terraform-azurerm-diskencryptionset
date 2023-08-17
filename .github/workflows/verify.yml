@@ -18,7 +18,7 @@ jobs:
       ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
       ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
       ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Do not change
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Do not change
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -53,6 +53,8 @@ jobs:
         working-directory: ${{ env.tf_target_dir }}
   security:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }} #for lastversion
     steps:
       - name: Checkout
         uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
