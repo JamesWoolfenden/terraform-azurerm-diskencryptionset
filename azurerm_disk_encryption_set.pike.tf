@@ -1,4 +1,3 @@
-
 resource "azurerm_disk_encryption_set" "pike" {
   name                = var.disk_encryption_set_name
   resource_group_name = var.rg_name

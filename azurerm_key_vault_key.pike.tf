@@ -1,5 +1,4 @@
 data "azurerm_client_config" "current" {}
-
 resource "azurerm_key_vault_key" "pike" {
   #checkov:skip=CKV_AZURE_112:hsm are expensive
   name            = var.key_name
@@ -21,7 +20,6 @@ resource "azurerm_key_vault_key" "pike" {
     "wrapKey",
   ]
 }
-
 resource "time_offset" "expire_key" {
   offset_years = 1
 }

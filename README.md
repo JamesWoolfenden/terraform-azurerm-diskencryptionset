@@ -66,6 +66,7 @@ No modules.
 | <a name="input_disk_encryption_set_name"></a> [disk\_encryption\_set\_name](#input\_disk\_encryption\_set\_name) | n/a | `string` | `"pike"` | no |
 | <a name="input_key_name"></a> [key\_name](#input\_key\_name) | n/a | `string` | `"pike"` | no |
 | <a name="input_location"></a> [location](#input\_location) | resource group location | `string` | n/a | yes |
+| <a name="input_public_network_access"></a> [public\_network\_access](#input\_public\_network\_access) | n/a | `bool` | `false` | no |
 | <a name="input_rg_name"></a> [rg\_name](#input\_rg\_name) | resource group name | `string` | n/a | yes |
 | <a name="input_role_definition_name"></a> [role\_definition\_name](#input\_role\_definition\_name) | role definition name | `string` | `"Key Vault Crypto Service Encryption User"` | no |
 | <a name="input_vault_name"></a> [vault\_name](#input\_vault\_name) | n/a | `string` | `"pike"` | no |

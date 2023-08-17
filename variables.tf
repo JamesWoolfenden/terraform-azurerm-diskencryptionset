@@ -38,3 +38,8 @@ variable "key_name" {
   default     = "pike"
   description = ""
 }
+
+variable "public_network_access" {
+  type    = bool
+  default = false
+}

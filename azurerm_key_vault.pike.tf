@@ -7,7 +7,7 @@ resource "azurerm_key_vault" "pike" {
   sku_name                      = "premium"
   enabled_for_disk_encryption   = true
   purge_protection_enabled      = true
-  public_network_access_enabled = false
+  public_network_access_enabled = var.public_network_access
 
 
   network_acls {
