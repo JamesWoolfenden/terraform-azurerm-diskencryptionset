@@ -6,7 +6,7 @@ resource "azurerm_key_vault_key" "pike" {
   key_vault_id    = azurerm_key_vault.pike.id
   key_type        = "RSA"
   key_size        = 2048
-  expiration_date = timeadd(timestamp(), "1y")
+  expiration_date = time_offset.expire_key.rfc3339
 
   depends_on = [
     azurerm_key_vault_access_policy.pike-user
@@ -20,4 +20,8 @@ resource "azurerm_key_vault_key" "pike" {
     "verify",
     "wrapKey",
   ]
+}
+
+resource "time_offset" "expire_key" {
+  offset_years = 1
 }
